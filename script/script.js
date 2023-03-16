@@ -1,4 +1,5 @@
-const choicesElem = document.querySelector('.js-choice');
+import {choicesElem} from './modules/const.js';
+import './modules/renderPage.js';
 
 const choises = new Choices(choicesElem, {
 	searchEnabled: false,
@@ -6,5 +7,5 @@ const choises = new Choices(choicesElem, {
 	itemSelectText: '',
 	classNames: {
 		containerInner: 'choices__inner choices-box',
-	}
+	},
 });
