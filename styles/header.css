@@ -1,0 +1,56 @@
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__form {
+  display: flex;
+  gap: 30px;
+}
+
+.header__search {
+  position: relative;
+}
+
+.header__input,
+.header__select {
+  height: 44px;
+  border: 1px solid #E6E6E6;
+  border-radius: 22px;
+  font-size: 14px;
+  line-height: 80%;
+}
+
+.header__input {
+  padding: 16px 20px;
+  width: 500px;
+}
+
+.header__input::-webkit-search-cancel-button{
+  position: relative;
+  right: 20px;    
+}
+
+.header__submit {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 10px;
+  right: 17px;
+  background-image: url("../img/search.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__select {
+  padding: 5px 20px;
+  width: 320px;
+}

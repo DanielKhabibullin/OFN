@@ -1,0 +1,19 @@
+.footer {
+  padding: 20px 0;
+  border-top: 1px solid #E6E6E6;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  align-self: flex-end;
+}
+
+.footer__contacts {
+  display: flex;
+  gap: 15px;
+}

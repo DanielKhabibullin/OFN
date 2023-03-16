@@ -1,0 +1,28 @@
+@import "normalize.css";
+@import "default.css";
+@import "container.css";
+@import "header.css";
+@import "title.css";
+@import "main.css";
+@import "card.css";
+@import "footer.css";
+@import "overlay.css";
+
+/* roboto-300 - latin_cyrillic */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+		url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2'),
+		url('../fonts/roboto-v30-cyrillic_latin-regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: local(''),
+		url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2'),
+		url('../fonts/roboto-v30-cyrillic_latin-700.woff') format('woff');
+}

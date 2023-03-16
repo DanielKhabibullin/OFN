@@ -1,0 +1,16 @@
+.main {
+  padding: 20px 0;
+}
+
+.main__news,
+.main__headlines {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0 30px;
+  row-gap: 40px;
+}
+
+.main__news {
+  display: none;
+}

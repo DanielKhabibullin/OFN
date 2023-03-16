@@ -1,0 +1,26 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+.overlay__arrows {
+  position: fixed;
+  top: calc(50% - 120px / 2);
+  left: calc(50% - 165px / 2);
+  animation: rotation 2s infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
