@@ -1,5 +1,5 @@
-const URL = './headlines.json';
-
+// const URL = './headlines.json';
+const URL = 'https://newsapi.org/v2/';
 // let url = 'https://newsapi.org/v2/top-headlines?' +
 // 					'country=us&' +
 // 					'apiKey=555232f442bf4f898b247d9698e3d2d2';

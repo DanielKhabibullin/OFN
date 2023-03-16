@@ -10,9 +10,9 @@ export const preload = {
 
 	show() {
 		this.overlay.classList.add('preload');
-		// this.overlay.innerHTML = this.circle;
+		this.overlay.innerHTML = this.circle;
 		document.body.append(this.overlay);
-		document.querySelectorAll('.news-list')[0].append(this.overlay);
+		//document.querySelectorAll('.news-list')[0].append(this.overlay);
 	},
 	remove() {
 		this.overlay.remove();

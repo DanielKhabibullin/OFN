@@ -16,7 +16,7 @@ export const renderNews = (err, data) => {
 		const time = new Date(publishedAt);
 		const options = {hour: 'numeric', minute: 'numeric', hour12: false};
 		const localTime = time.toLocaleTimeString([], options);
-		//const shortDescription = item.description.slice(0, 65);
+		// const shortDescription = item.description.slice(0, 65);
 
 		const newsItem = document.createElement('li');
 		newsItem.className = 'news-item';
@@ -36,6 +36,7 @@ export const renderNews = (err, data) => {
 		return newsItem;
 	});
 
+	news.splice(4);
 	template.append(...news);
 
 	return template;
