@@ -1,8 +1,7 @@
 import {controlSearch, controlSelect} from './modules/control.js';
 import {renderHeadlines} from './modules/render.js';
-
+export const headlinesWrapper = document.querySelector('.main__headlines');
 const init = () => {
-	const headlinesWrapper = document.querySelector('.main__headlines');
 	const newsWrapper = document.querySelector('.main__news');
 	const searchForm = document.querySelector('.header__form');
 	const select = document.querySelector('.header__select');
