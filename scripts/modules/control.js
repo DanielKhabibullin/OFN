@@ -4,10 +4,14 @@ import {renderHeadlines, renderNews} from './render.js';
 export const controlSearch = (form, newsWrapper, headlinesWrapper) => {
 	form.addEventListener('submit', event => {
 		event.preventDefault();
-
 		const formData = new FormData(event.target);
 		const keywords = Object.fromEntries(formData).phrase;
 		const country = Object.fromEntries(formData).country;
+
+		if (!keywords.trim()) {
+			alert('Введите поисковый запрос');
+			return;
+		}
 
 		preload.show();
 		Promise.all([renderNews(keywords, 8), renderHeadlines(country, 4)])

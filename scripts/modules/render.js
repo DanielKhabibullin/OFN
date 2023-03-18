@@ -21,7 +21,6 @@ export const renderHeadlines = (country, count) =>
 			const allHeadlines = articles.map(createCard);
 
 			template.append(title, ...allHeadlines);
-
 			return template;
 		},
 	});
@@ -43,8 +42,13 @@ export const renderNews = (phrase, count) =>
 			title.className = 'title';
 			title.textContent = `По вашему запросу "${
 				phrase}" найдено ${count} результатов`;
-			const articles = data.articles.slice(0, count);
-			const allArticles = articles.map(createCard);
+			const articles = data.articles;
+			const numResults = Math.min(articles.length, 8);
+			title.textContent = `По вашему запросу "${phrase}" найдено ${
+				numResults} результатов`;
+			const visibleArticles = articles.slice(0, count);
+			const allArticles = visibleArticles.map(article =>
+				createCard(article, count));
 
 			template.append(title, ...allArticles);
 			return template;
