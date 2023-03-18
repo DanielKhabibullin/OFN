@@ -43,7 +43,7 @@ export const renderNews = (phrase, count) =>
 			const title = document.createElement('h2');
 			title.className = 'title';
 			const articles = data.articles;
-			const numResults = articles.length;
+			const numResults = Math.min(articles.length, 8);
 			title.textContent = `По вашему запросу "${phrase}" найдено ${
 				numResults} результатов`;
 			const visibleArticles = articles.slice(0, count);
